@@ -27,6 +27,9 @@ jobs:
         repository: "cataclysm-interactive/PokemonBattler"
     - name: Setup Java JDK
       uses: actions/setup-java@v3.3.0
+      with: 
+        java-version: 17
+        distribution: temurin
     - name: Compile Code
       run: javac PokemonBattler/mainClass.java
     
