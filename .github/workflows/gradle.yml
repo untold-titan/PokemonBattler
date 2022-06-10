@@ -30,6 +30,8 @@ jobs:
       with: 
         java-version: 17
         distribution: temurin
+    - name: List Files
+      run: ls
     - name: Compile Code
       run: javac PokemonBattler/mainClass.java
     
