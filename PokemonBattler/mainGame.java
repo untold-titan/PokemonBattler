@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class mainGame {
 	
 	public static ArrayList<Pokemon> allMons = new ArrayList<Pokemon>();
