@@ -33,6 +33,6 @@ jobs:
     - name: List Files
       run: ls
     - name: Compile Code
-      run: javac PokemonBattler/mainClass.java
+      run: javac PokemonBattler/mainGame.java
     
 
