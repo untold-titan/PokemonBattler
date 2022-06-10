@@ -1,0 +1,39 @@
+Pokemon Project Log
+04-28 - Worked on proposal, and thought hard about how to actually accomplish this project.
+05-03 - Worked on propoasl, created Pokemon Class, and Main
+05-04 - Worked on Pokemon, added a few more classes
+
+
+05-09 - Super effective moves. Pokemon Type numbers are typed below. 
+1 - Normal
+2 - Fighting
+3 - Flying
+4 - Poison
+5 - Ground
+6 - Rock
+7 - Bug
+8 - Ghost
+9 - Steel
+10 - Fire
+11 - Water
+12 - Grass
+13 - Electric
+14 - Psychic
+15 - Ice
+16 - Dragon (deez nuts lmao)
+17 - Dark
+18 - Fairy
+
+05-10 - Finished downloading all 826 pokemon moves, and put them all into a text file that sits where the program executes so that it can load them all in. I'll do something similar for the Pokemon
+
+05-11 - Turns out I didn't download the moves properly, time to do it again!
+
+05-12 - Actually programmed the part of the game that imports all *426 moves. I scrapped a bunch of them cause they're too weird for me to care about how they work.
+
+05-16 - Added Damage Super effectiveness, and the ACTUAL POKEMON DAMAGE CALCUATION. 
+ 
+05-17 - Finished Super effectiveness/effectiveness, Thats a lot of switch cases. Also started work on the 2nd python script to download and format all the data from the pokeAPI
+//Note: This project has been really smooth sailing for me, and except for me googling small things, like how to turn an Int into a String, there really haven't been many issues.
+05-18 - Added part 1 of the team builder, Players can now select the MOVES for their pokemon, which is currently just a lvl 100 eevee.
+
+05-19 - Started work on part 2 of the team builder. Selecting Pokemon. 
