@@ -1,11 +1,4 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
-
-name: Java CI with Gradle
+name: Java Build
 
 on:
   push:
@@ -36,4 +29,13 @@ jobs:
       run: |
         cd PokemonBattler
         jar cf pkmn.jar mainGame.java
+        ls
+
+    - name: Release
+      uses: fnkr/github-action-ghr@v1
+      env:
+        GHR_PATH: build/
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      
 
