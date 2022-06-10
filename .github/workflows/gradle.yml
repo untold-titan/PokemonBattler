@@ -33,5 +33,7 @@ jobs:
     - name: List Files
       run: ls
     - name: Compile Code
-      run: jar PokemonBattler/mainGame.java
+      run: |
+        cd PokemonBattler
+        jar cf mainGame.java
 
