@@ -35,5 +35,5 @@ jobs:
     - name: Compile Code
       run: |
         cd PokemonBattler
-        jar cf mainGame.java
+        jar cf pkmn.jar mainGame.java
 
