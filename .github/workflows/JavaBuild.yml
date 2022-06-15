@@ -50,7 +50,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}        
       with:
-        tag_name: ${{ env.BUILD_NUMBER }}
+        tag_name: ${{ steps.my-project-build-number.outputs.build-number }}
         release_name: ${{ github.event.head_commit.message }}
         draft: true
         prerelease: false
