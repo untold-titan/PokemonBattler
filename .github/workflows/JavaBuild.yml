@@ -35,7 +35,7 @@ jobs:
       id: create_tag
       run: |
         ls
-        tag=$(basename "${{ github.ref }}")
+        tag=NOTMAIN
         echo "::set-output name=tag::$tag"
       
     - name: Create Release
