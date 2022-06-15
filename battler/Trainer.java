@@ -1,4 +1,4 @@
-package PokemonBattler;
+package battler;
 import java.util.ArrayList;
 import java.util.Scanner;
 

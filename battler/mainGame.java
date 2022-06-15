@@ -1,10 +1,9 @@
-package PokemonBattler;
+package battler;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-
 
 public class mainGame {
 	
@@ -110,8 +109,9 @@ public class mainGame {
 	    	System.out.println("You Selected: " + allMons.get(selection-1).name);
 	    }
 	    System.out.println("Player 2. Please select your pokemon! Please enter the NATIONAL dex number of the pokemon.");
+	    System.out.println("\nIf you dont know what the national dex is, go check out \nhttps://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number\n and enter the ndex number\n");
 	    for(int i = 0; i != 6; i++) {
-	    	System.out.println("Please select a pokemon! (Enter the dex num) (You can enter 0 to finish selecting pokemon)\n(You can enter -1 to select a random pokemon!):");
+	    	System.out.println("Please select a pokemon! (Enter the dex num)\n(You can enter 0 to finish selecting pokemon)\n(You can enter -1 to select a random pokemon!):");
 	    	int selection = input.nextInt();
 	    	if(selection == 0) {
 	    		break;

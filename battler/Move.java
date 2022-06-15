@@ -1,4 +1,4 @@
-package PokemonBattler;
+package battler;
 
 public class Move {
 	public String name;
