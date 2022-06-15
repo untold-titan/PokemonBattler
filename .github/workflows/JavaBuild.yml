@@ -34,6 +34,7 @@ jobs:
     - name: Create tag
       id: create_tag
       run: |
+        ls
         tag=$(basename "${{ github.ref }}")
         echo "::set-output name=tag::$tag"
       
@@ -53,7 +54,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pkmn.jar
+        asset_path: ../pkmn.jar
         asset_name: pkmn.jar
         asset_content_type: application/jar
         
