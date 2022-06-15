@@ -16,10 +16,10 @@ jobs:
     steps:
     - uses: travisj/build-number-action@v1
       id: my-project-build-number
-    - name: Echo Build Number
-      run: echo $BUILD_NUMBER
       env:
         BUILD_NUMBER: ${{ steps.my-project-build-number.outputs.build-number }}
+    - name: Echo Build Number
+      run: echo $BUILD_NUMBER
     - name: Checkout
       uses: actions/checkout@v2.4.2
       with: 
