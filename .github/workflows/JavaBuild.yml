@@ -29,21 +29,15 @@ jobs:
       with: 
         java-version: 17
         distribution: temurin
-    - name: List Files
-      run: ls
     - name: Compile Code
       run: |
         cd battler
-        jar cmvf manifest.txt pkmn.jar mainGame.java
+        javac mainGame.java Pokemon.java Trainer.java Move.java
         ls
-        
-    - name: Create tag
-      id: create_tag
+    - name: Package into JAR
       run: |
-        ls
-        tag=NOTMAIN
-        echo "::set-output name=tag::$tag"
-      
+        cd battler
+        jar cmvf manifest.txt pkmn.jar mainGame.class Pokemon.class Trainer.class Move.class
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
