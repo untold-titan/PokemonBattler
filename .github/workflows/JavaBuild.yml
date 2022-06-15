@@ -28,7 +28,7 @@ jobs:
     - name: Compile Code
       run: |
         cd battler
-        jar cmvf META-INF/MANIFEST.MF pkmn.jar mainGame.java
+        jar cmvf manifest.txt pkmn.jar mainGame.java
         ls
         
     - name: Create tag
