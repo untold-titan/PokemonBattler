@@ -1,1 +1,1 @@
-com.battler.mainGame
+Main-Class: com.battler.mainGame
