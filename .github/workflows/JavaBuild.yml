@@ -11,16 +11,10 @@ permissions:
 
 jobs:
   build:
-  
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latesT        
+    
     steps:
     - uses: travisj/build-number-action@v1
-      id: my-project-build-number
-
-    - name: Echo Build Number
-      run: echo $BUILD_NUMBER
-      env:
-        BUILD_NUMBER: ${{ steps.my-project-build-number.outputs.build-number }}
     - name: Checkout
       uses: actions/checkout@v2.4.2
       with: 
@@ -49,7 +43,8 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        BUILD_NUMBER: ${{ steps.create_release.outputs.build-number }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}        
       with:
         tag_name: ${{ env.BUILD_NUMBER }}
         release_name: ${{ github.event.head_commit.message }}
