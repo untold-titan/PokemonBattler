@@ -27,7 +27,7 @@ jobs:
       run: ls
     - name: Compile Code
       run: |
-        cd PokemonBattler
+        cd battler
         jar cf pkmn.jar mainGame.java
         ls
         
