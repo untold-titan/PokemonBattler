@@ -208,6 +208,8 @@ public class mainGame {
 			//Player 1's turn
 			//Ask the user for what move they want to use
 			System.out.println("Player 1! Please select a move to use. Press 5 to change pokemon!");
+			System.out.println("Current Pokemon: " + player1.getCurrentMon().name);
+			System.out.println("Health: " + player1.getCurrentMon().HP);
 			System.out.println("Moves:");
 			for(int i = 0; i != player1.getCurrentMon().moves.size(); i++) {
 				System.out.print(i + 1 + ": ");
@@ -238,6 +240,8 @@ public class mainGame {
 			
 			//Player 2's Turn
 			System.out.println("Player 2! Please select a move to use");
+			System.out.println("Current Pokemon: " + player2.getCurrentMon().name);
+			System.out.println("Health: " + player2.getCurrentMon().HP);
 			System.out.println("Moves:");
 			for(int i = 0; i != player2.getCurrentMon().moves.size(); i++) {
 				System.out.print(i + 1 + ": ");
