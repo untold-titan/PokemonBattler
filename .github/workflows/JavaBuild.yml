@@ -28,7 +28,7 @@ jobs:
     - name: Compile Code
       run: |
         cd battler
-        jar cf pkmn.jar mainGame.java
+        jar cmvf META-INF/MANIFEST.MF pkmn.jar mainGame.java Trainer.java Pokemon.java Move.java 
         ls
         
     - name: Create tag
