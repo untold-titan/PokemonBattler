@@ -98,6 +98,10 @@ public class mainGame {
 	    for(int i = 0; i != 6; i++) {
 	    	System.out.println("Please select a pokemon! (Enter the dex num)\n(You can enter 0 to finish selecting pokemon)\n(You can enter -1 to select a random pokemon!):");
 	    	int selection = input.nextInt();
+	    	if(selection >= allMons.size() || selection <= -1) {
+	    		System.out.println("That pokemon doesnt exist, set it to the last pokemon imported.");
+	    		selection = allMons.size()-1;
+	    	}
 	    	if(selection == 0) {
 	    		break;
 	    	}
@@ -113,6 +117,10 @@ public class mainGame {
 	    for(int i = 0; i != 6; i++) {
 	    	System.out.println("Please select a pokemon! (Enter the dex num)\n(You can enter 0 to finish selecting pokemon)\n(You can enter -1 to select a random pokemon!):");
 	    	int selection = input.nextInt();
+	    	if(selection >= allMons.size() || selection <= -1) {
+	    		System.out.println("That pokemon doesnt exist, set it to the last pokemon imported.");
+	    		selection = allMons.size()-1;
+	    	}
 	    	if(selection == 0) {
 	    		break;
 	    	}
@@ -127,6 +135,7 @@ public class mainGame {
 	    //Pokemon Move Selection for player 1
 		System.out.println("Player 1, You will now select your moves for your pokemon! Press enter to continue.");
 		input.nextLine();
+		input.nextLine();
 		for(int i = 0; i != moves.size(); i++) {
 			System.out.print(i + 1 + ": ");
 			System.out.println(moves.get(i));
@@ -137,6 +146,10 @@ public class mainGame {
 	    	for(int slot = 0; slot != 4; slot++) {
 	    		System.out.println("Please enter the move NUMBER you want to select");
 	    		int selection = input.nextInt();
+		    	if(selection >= moves.size() || selection <= 0) {
+		    		System.out.println("That move doesnt exist, set it to the last move imported.");
+		    		selection = moves.size()-1;
+		    	}
 	    		if(selection == 0) {
 	    			break;
 	    		}
@@ -158,6 +171,10 @@ public class mainGame {
 	    	for(int slot = 0; slot != 4; slot++) {
 	    		System.out.println("Please enter the move NUMBER you want to select");
 	    		int selection = input.nextInt();
+		    	if(selection >= moves.size() || selection <= 0) {
+		    		System.out.println("That move doesnt exist, set it to the last move imported.");
+		    		selection = moves.size()-1;
+		    	}
 	    		if(selection == 0) {
 	    			break;
 	    		}

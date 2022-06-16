@@ -19,18 +19,23 @@ public class Trainer {
 	//Implement Switch Pokemon Function
 	public void switchPokemon() {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Please select a pokemon to switch to.");
-		for(int i = 0; i != team.size(); i++) {
-			System.out.print(i + 1 + ": ");
-			System.out.println(team.get(i));
+		boolean switched = false;
+		while (switched == false){
+			System.out.println("Please select a pokemon to switch to.");
+			for(int i = 0; i != team.size(); i++) {
+				System.out.print(i + 1 + ": ");
+				System.out.println(team.get(i));
+			}
+			int selectedMon = input.nextInt();
+			if(team.get(selectedMon - 1).HP > 0) {
+				currentPokemon = selectedMon;
+				switched = true;
+			}
+			else{
+				System.out.println("Couldn't switch pkmn!");
+			}
 		}
-		int selectedMon = input.nextInt();
-		if(team.get(selectedMon - 1).HP > 0) {
-			currentPokemon = selectedMon;
-		}
-		else{
-			System.out.println("Couldn't switch pkmn!");
-		}
+		input.close();
 	}
 	
 	public boolean didLose() {
