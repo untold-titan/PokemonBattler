@@ -1,6 +1,6 @@
 # PokemonBattler
 This is a fan project. 
-
+[![Build](https://github.com/cataclysm-interactive/PokemonBattler/actions/workflows/JavaBuild.yml/badge.svg)](https://github.com/cataclysm-interactive/PokemonBattler/actions/workflows/JavaBuild.yml)
 # How to use
 You will need:
  - The JDK installed. You can check if this is installed by running `java --version` in a command prompt
