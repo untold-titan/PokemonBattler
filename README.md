@@ -5,8 +5,8 @@ This is a fan project.
 You will need:
  - The JDK installed. You can check if this is installed by running `java --version` in a command prompt
  - The latest version from Releases on the right side
- - (moves.txt)[https://drive.google.com/uc?export=download&id=1noKm1hfJ2WoP1IR38camnZkKIOd-mUkSv]
- - (pokemon.txt)[https://drive.google.com/uc?export=download&id=14OK1K5yebeunYAqtYS3Ee4e2ju0VeoDu]
+ - [moves.txt](https://drive.google.com/uc?export=download&id=1noKm1hfJ2WoP1IR38camnZkKIOd-mUkSv)
+ - [pokemon.txt](https://drive.google.com/uc?export=download&id=14OK1K5yebeunYAqtYS3Ee4e2ju0VeoDu)
  - MAKE SURE TO PUT pkmn.jar and the .txt files IN THE SAME FOLDER!!!
 
 ## How to run the game
