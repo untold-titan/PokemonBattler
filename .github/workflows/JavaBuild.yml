@@ -36,8 +36,7 @@ jobs:
         ls
     - name: Package into JAR
       run: |
-        cd battler
-        jar cfe pkmn.jar mainGame mainGame.class Pokemon.class Trainer.class Move.class
+        jar cfe pkmn.jar mainGame battler
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
